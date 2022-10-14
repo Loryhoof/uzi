@@ -488,7 +488,7 @@ export default e => {
 
         if(isShooting && ((timestamp - lastShootTime) > fireDelay)) {
           lastShootTime = timestamp;
-          sounds.playSound(soundFiles.combat[soundIndex]);
+          sounds.playSoundName("smg");
           gunApp.use();
         }
       }
